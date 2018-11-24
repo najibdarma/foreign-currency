@@ -1,0 +1,10 @@
+package com.shopee.foreign.currency;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ForeignCurrency {
+    public static void main(String[] args) {
+        SpringApplication.run(ForeignCurrency.class, args);
+    }
+}

@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: foreign-currency
+    ports:
+      - 5430:5432
+      
+  foreign-currency:
+    image: foreign-currency
+    ports:
+      - 8780:8780
+    depends_on:
+      - db
